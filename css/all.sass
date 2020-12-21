@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+	
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video
+	margin: 0
+	padding: 0
+	border: 0
+	font-size: 100%
+	vertical-align: baseline
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section
+	display: block
+
+body
+	line-height: 1
+
+ol, ul
+	list-style: none
+
+blockquote, q
+	quotes: none
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after
+	content: ''
+	content: none
+
+table
+	border-collapse: collapse
+	border-spacing: 0
+
+img
+	max-width: 100%
+	height: auto
+
+*,
+*::before,
+*::after
+	position: relative
+	box-sizing: border-box
+	
+*
+	font-family: 'Karla', sans-serif
+	// border: solid 1px white
+
+h1, h2, h3, h4, h5, h6
+	font-weight: bold
+h1
+	font-size: 60px
+h2
+	font-size: 48px
+h3
+	font-size: 36px
+h4
+	font-size: 30px
+h5
+	font-size: 24px
+h6
+	font-size: 18px
+//--------------------------------** RESET CSS **--------------------------------//
+
+$color_main: #e0a297
+$color_hover: #955044
+$color_black: #000000
+$color_white: #ffffff
+$color_gray: #343a40
+//--------------------------------** var **--------------------------------//
+
+
+
+
+//--------------------------------------------** navbar **--------------------------------------------//
+nav.navbar.navbar-expand-lg.fixed-top.p-0
+  border-bottom: solid 1px #f3f3f1
+  transition: 0.5s
+nav.navbar.navbar-expand-lg.fixed-top.p-0.navbar-gb
+  background-color: white
+  box-shadow: 2px 2px 15px rgba(#333333,0.8)
+
+nav
+	.hover
+		color: white
+		transition: 0.5s
+
+	.hover:hover
+		color: $color_main !important
+
+	.logo
+		font-size: 40px
+		font-weight: bold
+		color: white
+
+		.fa-dungeon
+			margin-right: 10px
+			font-size: 28px
+			top: -2px
+			transition: 0.5s
+		.icon
+			font-size: 28px
+
+//--------------------------------------------** header **--------------------------------------------//
+header.jumbotron
+	background-image: url(https://cyberisland.teldap.tw/G/qwhcsQdlbdAdefbBItDulZi)
+	background-size: cover
+	background-attachment: fixed
+	margin-bottom: 0
+
+	.container
+		padding: 200px 0px
+
+	.overlay
+		padding: 50px 0px
+		background-color: rgba($color_black,0.6)
+		text-align: center
+
+		h1
+			color: white
+			margin-bottom: 20px
+
+		.hr
+			margin: 0px auto 20px
+			max-width: 100px
+			height: 5px
+			background-color: $color_main
+
+		h5
+			color: rgba($color_white,0.8)
+
+			
+//--------------------------------------------** section **--------------------------------------------//
+section
+	padding: 80px 0px
+
+
+//--------------------------------------------** ask **--------------------------------------------//
+section#section_ask
+	background-color: $color_main
+
+	.col-md-5.img
+		background-image: url('../images/ask-pic.jpg')
+		background-size: cover
+		mix-blend-mode: multiply
+		height: 300px
+
+	.col-md-7.ask
+		display: flex
+		justify-content: center
+		align-items: center
+
+		h3
+			color: $color_gray
+
+
+//--------------------------------------------** about **--------------------------------------------//
+section#section_about
+	.col-md-4.col-sm-6
+		.img-wrap
+			overflow: hidden
+			margin-bottom: 10px
+
+			img
+				height: 250px
+
+		h5
+			margin: 20px 0px
+
+		p
+			line-height: 1.8
+
+
+//--------------------------------------------** story **--------------------------------------------//
+section#section_story
+	padding: 0
+	background-color: #222222
+	color: white
+
+	.col-md-5.map
+		height: 400px
+		background-image: url(https://pic.pimg.tw/jimtim168/1472978862-299625152.png)
+		background-size: cover
+
+	.col-md-7
+		text-align: center
+
+		h3
+			margin-top: 20px
+
+	.col-md-4
+		padding: 30px 0px
+
+		.fa-affiliatetheme,
+		.fa-child,
+		.fa-screwdriver
+			margin-bottom: 10px
+			font-size: 30px
+
+	.story_text
+		text-align: left
+		line-height: 1.8
+
+
+//--------------------------------------------** future **--------------------------------------------//
+section#section_future
+
+	.col-md-5.where
+		height: 400px
+		background-image: url(https://www.taichung.travel/Utility/DisplayImage?id=17996)
+		background-size: cover
+
+	.col-md-7
+		padding-left: 30px
+
+		.fa-people-carry,
+		.fa-landmark
+			font-size: 40px
+			margin: 20px 0px
+		h5
+			margin-bottom: 10px
+
+//--------------------------------------------** footer **--------------------------------------------//
+footer.jumbotron
+	background-image: url(https://cyberisland.teldap.tw/G/qwhcsQdlbdAdefbBItDulZi)
+	background-size: cover
+	background-attachment: fixed
+	margin-bottom: 0
+
+	.container
+		padding: 80px
+		margin-bottom: 0
+
+		h2
+			color: white
+			text-align: center
+
+		input
+			background-color: transparent
+			max-width: 350px
+			margin: 30px auto 
+
+		.hr
+			margin: 0px auto 20px
+			max-width: 100px
+			height: 5px
+			background-color: $color_main
+
+		button
+			display: block
+			margin: 0 auto
+			background-color: white
+		button:hover
+			color: white
+			background-color: $color_hover

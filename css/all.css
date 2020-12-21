@@ -1,0 +1,314 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+*,
+*::before,
+*::after {
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* {
+  font-family: 'Karla', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 36px;
+}
+
+h4 {
+  font-size: 30px;
+}
+
+h5 {
+  font-size: 24px;
+}
+
+h6 {
+  font-size: 18px;
+}
+
+nav.navbar.navbar-expand-lg.fixed-top.p-0 {
+  border-bottom: solid 1px #f3f3f1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+nav.navbar.navbar-expand-lg.fixed-top.p-0.navbar-gb {
+  background-color: white;
+  -webkit-box-shadow: 2px 2px 15px rgba(51, 51, 51, 0.8);
+          box-shadow: 2px 2px 15px rgba(51, 51, 51, 0.8);
+}
+
+nav .hover {
+  color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+nav .hover:hover {
+  color: #e0a297 !important;
+}
+
+nav .logo {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+}
+
+nav .logo .fa-dungeon {
+  margin-right: 10px;
+  font-size: 28px;
+  top: -2px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+nav .logo .icon {
+  font-size: 28px;
+}
+
+header.jumbotron {
+  background-image: url(https://cyberisland.teldap.tw/G/qwhcsQdlbdAdefbBItDulZi);
+  background-size: cover;
+  background-attachment: fixed;
+  margin-bottom: 0;
+}
+
+header.jumbotron .container {
+  padding: 200px 0px;
+}
+
+header.jumbotron .overlay {
+  padding: 50px 0px;
+  background-color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+
+header.jumbotron .overlay h1 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+header.jumbotron .overlay .hr {
+  margin: 0px auto 20px;
+  max-width: 100px;
+  height: 5px;
+  background-color: #e0a297;
+}
+
+header.jumbotron .overlay h5 {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+section {
+  padding: 80px 0px;
+}
+
+section#section_ask {
+  background-color: #e0a297;
+}
+
+section#section_ask .col-md-5.img {
+  background-image: url("../images/ask-pic.jpg");
+  background-size: cover;
+  mix-blend-mode: multiply;
+  height: 300px;
+}
+
+section#section_ask .col-md-7.ask {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section#section_ask .col-md-7.ask h3 {
+  color: #343a40;
+}
+
+section#section_about .col-md-4.col-sm-6 .img-wrap {
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+section#section_about .col-md-4.col-sm-6 .img-wrap img {
+  height: 250px;
+}
+
+section#section_about .col-md-4.col-sm-6 h5 {
+  margin: 20px 0px;
+}
+
+section#section_about .col-md-4.col-sm-6 p {
+  line-height: 1.8;
+}
+
+section#section_story {
+  padding: 0;
+  background-color: #222222;
+  color: white;
+}
+
+section#section_story .col-md-5.map {
+  height: 400px;
+  background-image: url(https://pic.pimg.tw/jimtim168/1472978862-299625152.png);
+  background-size: cover;
+}
+
+section#section_story .col-md-7 {
+  text-align: center;
+}
+
+section#section_story .col-md-7 h3 {
+  margin-top: 20px;
+}
+
+section#section_story .col-md-4 {
+  padding: 30px 0px;
+}
+
+section#section_story .col-md-4 .fa-affiliatetheme,
+section#section_story .col-md-4 .fa-child,
+section#section_story .col-md-4 .fa-screwdriver {
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+section#section_story .story_text {
+  text-align: left;
+  line-height: 1.8;
+}
+
+section#section_future .col-md-5.where {
+  height: 400px;
+  background-image: url(https://www.taichung.travel/Utility/DisplayImage?id=17996);
+  background-size: cover;
+}
+
+section#section_future .col-md-7 {
+  padding-left: 30px;
+}
+
+section#section_future .col-md-7 .fa-people-carry,
+section#section_future .col-md-7 .fa-landmark {
+  font-size: 40px;
+  margin: 20px 0px;
+}
+
+section#section_future .col-md-7 h5 {
+  margin-bottom: 10px;
+}
+
+footer.jumbotron {
+  background-image: url(https://cyberisland.teldap.tw/G/qwhcsQdlbdAdefbBItDulZi);
+  background-size: cover;
+  background-attachment: fixed;
+  margin-bottom: 0;
+}
+
+footer.jumbotron .container {
+  padding: 80px;
+  margin-bottom: 0;
+}
+
+footer.jumbotron .container h2 {
+  color: white;
+  text-align: center;
+}
+
+footer.jumbotron .container input {
+  background-color: transparent;
+  max-width: 350px;
+  margin: 30px auto;
+}
+
+footer.jumbotron .container .hr {
+  margin: 0px auto 20px;
+  max-width: 100px;
+  height: 5px;
+  background-color: #e0a297;
+}
+
+footer.jumbotron .container button {
+  display: block;
+  margin: 0 auto;
+  background-color: white;
+}
+
+footer.jumbotron .container button:hover {
+  color: white;
+  background-color: #955044;
+}
+/*# sourceMappingURL=all.css.map */
