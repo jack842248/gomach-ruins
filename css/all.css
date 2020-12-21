@@ -66,6 +66,10 @@ img {
   font-family: 'Karla', sans-serif;
 }
 
+body {
+  height: 0;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 }
@@ -135,7 +139,7 @@ nav .logo .icon {
 }
 
 header.jumbotron {
-  background-image: url(https://cyberisland.teldap.tw/G/qwhcsQdlbdAdefbBItDulZi);
+  background-image: url(../images/jumbotron-pic.jpg);
   background-size: cover;
   background-attachment: fixed;
   margin-bottom: 0;
@@ -176,7 +180,7 @@ section#section_ask {
 }
 
 section#section_ask .col-md-5.img {
-  background-image: url("../images/ask-pic.jpg");
+  background-image: url(../images/ask-pic.jpg);
   background-size: cover;
   mix-blend-mode: multiply;
   height: 300px;
@@ -223,8 +227,9 @@ section#section_story {
 
 section#section_story .col-md-5.map {
   height: 400px;
-  background-image: url(https://pic.pimg.tw/jimtim168/1472978862-299625152.png);
+  background-image: url(../images/story-pic.png);
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 section#section_story .col-md-7 {
@@ -235,20 +240,24 @@ section#section_story .col-md-7 h3 {
   margin-top: 20px;
 }
 
-section#section_story .col-md-4 {
-  padding: 30px 0px;
+section#section_story .col-md-7 .col-md-4 {
+  display: block;
+  border: solid 1px white;
+  white-space: nowrap;
+  text-align: center;
 }
 
-section#section_story .col-md-4 .fa-affiliatetheme,
-section#section_story .col-md-4 .fa-child,
-section#section_story .col-md-4 .fa-screwdriver {
+section#section_story .col-md-7 .col-md-4 .fa-affiliatetheme,
+section#section_story .col-md-7 .col-md-4 .fa-child,
+section#section_story .col-md-7 .col-md-4 .fa-screwdriver {
   margin-bottom: 10px;
   font-size: 30px;
 }
 
-section#section_story .story_text {
+section#section_story .col-md-7 .story_text {
   text-align: left;
   line-height: 1.8;
+  padding: 20px;
 }
 
 section#section_future .col-md-5.where {
@@ -272,7 +281,7 @@ section#section_future .col-md-7 h5 {
 }
 
 footer.jumbotron {
-  background-image: url(https://cyberisland.teldap.tw/G/qwhcsQdlbdAdefbBItDulZi);
+  background-image: url(../images/jumbotron-pic.jpg);
   background-size: cover;
   background-attachment: fixed;
   margin-bottom: 0;
@@ -310,5 +319,21 @@ footer.jumbotron .container button {
 footer.jumbotron .container button:hover {
   color: white;
   background-color: #955044;
+}
+
+@media (max-width: 900px) {
+  .col-md-7.ask h3 {
+    margin-top: 30px;
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 650px) {
+  .overlay h1 {
+    font-size: 40px;
+  }
+  .overlay h5 {
+    font-size: 20px;
+  }
 }
 /*# sourceMappingURL=all.css.map */

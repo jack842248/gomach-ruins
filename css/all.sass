@@ -56,6 +56,8 @@ img
 *
 	font-family: 'Karla', sans-serif
 	// border: solid 1px white
+body
+	height: 0
 
 h1, h2, h3, h4, h5, h6
 	font-weight: bold
@@ -73,12 +75,13 @@ h6
 	font-size: 18px
 //--------------------------------** RESET CSS **--------------------------------//
 
+//--------------------------------** var **--------------------------------//
 $color_main: #e0a297
 $color_hover: #955044
 $color_black: #000000
 $color_white: #ffffff
 $color_gray: #343a40
-//--------------------------------** var **--------------------------------//
+
 
 
 
@@ -114,7 +117,7 @@ nav
 
 //--------------------------------------------** header **--------------------------------------------//
 header.jumbotron
-	background-image: url(https://cyberisland.teldap.tw/G/qwhcsQdlbdAdefbBItDulZi)
+	background-image: url(../images/jumbotron-pic.jpg)
 	background-size: cover
 	background-attachment: fixed
 	margin-bottom: 0
@@ -151,7 +154,7 @@ section#section_ask
 	background-color: $color_main
 
 	.col-md-5.img
-		background-image: url('../images/ask-pic.jpg')
+		background-image: url(../images/ask-pic.jpg)
 		background-size: cover
 		mix-blend-mode: multiply
 		height: 300px
@@ -190,8 +193,9 @@ section#section_story
 
 	.col-md-5.map
 		height: 400px
-		background-image: url(https://pic.pimg.tw/jimtim168/1472978862-299625152.png)
+		background-image: url(../images/story-pic.png)
 		background-size: cover
+		background-repeat: no-repeat
 
 	.col-md-7
 		text-align: center
@@ -199,18 +203,23 @@ section#section_story
 		h3
 			margin-top: 20px
 
-	.col-md-4
-		padding: 30px 0px
+		.col-md-4
+			display: block
+			border: solid 1px white
+			white-space: nowrap
+			text-align: center
 
-		.fa-affiliatetheme,
-		.fa-child,
-		.fa-screwdriver
-			margin-bottom: 10px
-			font-size: 30px
+			.fa-affiliatetheme,
+			.fa-child,
+			.fa-screwdriver
+				margin-bottom: 10px
+				font-size: 30px
+				
 
-	.story_text
-		text-align: left
-		line-height: 1.8
+		.story_text
+			text-align: left
+			line-height: 1.8
+			padding: 20px
 
 
 //--------------------------------------------** future **--------------------------------------------//
@@ -233,7 +242,7 @@ section#section_future
 
 //--------------------------------------------** footer **--------------------------------------------//
 footer.jumbotron
-	background-image: url(https://cyberisland.teldap.tw/G/qwhcsQdlbdAdefbBItDulZi)
+	background-image: url(../images/jumbotron-pic.jpg)
 	background-size: cover
 	background-attachment: fixed
 	margin-bottom: 0
@@ -264,3 +273,21 @@ footer.jumbotron
 		button:hover
 			color: white
 			background-color: $color_hover
+
+
+//--------------------------------------------** 900px **--------------------------------------------//
+@media (max-width:900px)
+	.col-md-7.ask
+		h3
+			margin-top: 30px
+			font-size: 30px
+
+
+//--------------------------------------------** 650px **--------------------------------------------//
+@media (max-width:650px)
+	.overlay
+		h1
+			font-size: 40px
+
+		h5
+			font-size: 20px
