@@ -1,4 +1,3 @@
-
 head
     meta(charset="UTF-8")
     meta(http-equiv="X-UA-compatible" content="ie=edge,chrome=1")
@@ -21,9 +20,10 @@ head
     meta(name="twitter:image" content="images/about-pic1.jpg")
     meta(name="twitter:site" content="jack842248")
     link(rel="canonical" href="https://jack842248.github.io/top-point/")
-    link(rel="icon" href="images/favicon.ico")
+    //- link(rel="icon" href="images/favicon.ico")
     link(type="text/css" media="only screen and (-webkit-min-device-pixel-ratio: 2)" href="/Images/IPhone.css")
     link(rel="stylesheet" type="text/css" href="css/bootstrap.css")
+    link(rel="stylesheet" type="text/css" href="css/bootstrap-icons.css")
     link(rel="stylesheet" type="text/css" href="css/all.css")
     link(rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css")
 
@@ -31,9 +31,11 @@ body
     nav.navbar.navbar-expand-lg.fixed-top.p-0
         a.navbar-brand.logo.ml-3(href="#")
             i.fas.fa-dungeon
-            span.icon 牛罵頭文化遺址
-        button.navbar-toggler(type="button" data-toggle="collapse" data-target="#menu")
-            span.navbar-toggler-icon
+            span.logo 牛罵頭文化遺址
+        .navbar-icon(data-target="#menu")
+            .line1
+            .line2
+            .line3
         .collapse.navbar-collapse#menu
             ul.navbar-nav.ml-auto
                 li.nav-item.px-3
@@ -44,12 +46,12 @@ body
                     a.nav-link.hover(href="#section_story") 故事 STORY
                 li.nav-item.px-3
                     a.nav-link.hover(href="#section_future") 未來 FUTURE
-    header.jumbotron
+    header.container-fluid
         .container
             .overlay(data-0="transform:translateY(-50px)" data-500="transform:translateY(200px)")
-                h1 史前的繩紋紅陶文化
+                h1.main-title 史前的繩紋紅陶文化
                 .hr
-                h5 清水牛罵頭遺址
+                h5.sub-title 清水牛罵頭遺址
     section#section_ask
         .container
             .row
@@ -57,15 +59,13 @@ body
 
 
                 .col-md-7.ask
-                    h3 在早期是如何製作出陶器的?
+                    h3.ask-content 你知道早期是怎麼製作陶器的嗎?
     section#section_about
         .container
             .row
                 .col-12(data-bottom-top="transform:translateY(-50px);opacity:0" data-center="transform:translateY(0px);opacity:1")
-                    h3
-                        | 關於牛罵頭
-
-                        hr
+                    h3.about-title <i class="fas fa-align-justify"></i> 關於牛罵頭
+                    hr
             .row
                 .col-md-4.col-sm-6
                     .img-wrap(data-bottom-top="transform:translateY(-50px);opacity:0" data-center="transform:translateY(0px);opacity:1")
@@ -88,22 +88,22 @@ body
         .container-fluid
             .row
                 .col-md-5.map(data-bottom-top="background-size:150%;background-position: 0% 0%" data-center="background-size:100%;background-position: 50% 50%;opacity:1")
-                .col-md-7.d-flex.flex-column.justify-content-center.align-items-center
-                    h3 史前鰲峰山的歲月流轉
+                .col-md-7.offset-md-5.d-flex.flex-column.justify-content-center.align-items-center
+                    h3.story-title 史前鰲峰山的歲月流轉
                     .hr
                     .row.d-flex.flex-row.justify-content-between.w-100
-                        .col-md-4(data-bottom-top="transform:scale(1.5);opacity:0" data-center="transform:transform:scale(1);opacity:1")
+                        .col-md-4.p-0.mt-3
                             i.fab.fa-affiliatetheme
                             h6 誕生的文化
-                        .col-md-4(data-bottom-top="transform:scale(1.5);opacity:0" data-center="transform:transform:scale(1);opacity:1")
+                        .col-md-4.p-0.mt-3
                             i.fas.fa-child
                             h6 自然而生的人群
-                        .col-md-4(data-bottom-top="transform:scale(1.5);opacity:0" data-center="transform:transform:scale(1);opacity:1")
+                        .col-md-4.p-0.mt-3
                             i.fas.fa-screwdriver
                             h6 製陶方法
                     .row
                         .col-md-12
-                            p.story_text 鰲峰山多變的氣候，也影響到史前人的生活，陶器的製作成敗受到天氣很大的影響。降雨時，空氣中的溼氣會影響到陶器製作時陰乾的程度。陶器燒製前水分含量的多寡，直接影響到燒製的成功或失敗。因此多雨的天候並不是製陶的好時機。涼爽乾燥的天氣就非常適合製陶的工作。從牛罵頭考古遺址中出土大量的陶片，可以想見在當時人們的生活中，陶器是重要的器具之一。稻穀成為史前人類主要的食物來源，與陶器的製作出現有關。
+                            p 鰲峰山多變的氣候，也影響到史前人的生活，陶器的製作成敗受到天氣很大的影響。降雨時，空氣中的溼氣會影響到陶器製作時陰乾的程度。陶器燒製前水分含量的多寡，直接影響到燒製的成功或失敗。因此多雨的天候並不是製陶的好時機。涼爽乾燥的天氣就非常適合製陶的工作。從牛罵頭考古遺址中出土大量的陶片，可以想見在當時人們的生活中，陶器是重要的器具之一。稻穀成為史前人類主要的食物來源，與陶器的製作出現有關。
 
     section#section_future
         .container
@@ -124,7 +124,7 @@ body
                             i.fas.fa-landmark
                             h5 認識岸裡大社
                             p 所謂岸裡社意指曾在岸裡山前活動的巴宰族。清代以來，由於移居大社村的巴宰人屢建軍功、聲譽遠播，所擁有的政治、經濟力量均超越巴宰各社群，因其盟主的政治地位及位於大甲溪南岸的地理位置，原為巴宰族語舊稱的「岸裡」，被漢人音譯並附會為「位於大甲溪南」，或「北眺恰如在大甲溪南岸」的說法；「岸裡社」亦因此成為巴宰族的總稱。
-    footer.jumbotron
+    footer.container-fluid
         .container
             .row
                 .col-12
