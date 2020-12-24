@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -68,7 +68,7 @@ body {
 }
 
 * {
-  font-family: 'Karla', sans-serif;
+  font-family: 'Noto Serif TC', serif;
 }
 
 .navbar.navbar-expand-lg.fixed-top.p-0.navbar-gb {
@@ -82,23 +82,12 @@ body {
   border-bottom-transition: 0.5s;
 }
 
-.navbar .logo {
-  font-size: 40px;
-  font-weight: bold;
-  color: white;
-  padding: 20px 0px;
-}
-
-.navbar .logo .fa-dungeon {
-  margin-right: 10px;
-  font-size: 40px;
-  top: -2px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.navbar .logo .fa-dungeon .logo {
-  font-size: 28px;
+.navbar h1 .logo {
+  margin: 20px;
+  width: 270px;
+  height: 50px;
+  background-image: url(../images/logo-white.svg);
+  background-size: cover;
 }
 
 .navbar .navbar-icon {
