@@ -26,7 +26,8 @@ $(document).ready(function(){
         $(".line1").css("background-color","#6c757d"),
         $(".line2").css("background-color","#6c757d"),
         $(".line3").css("background-color","#6c757d"),
-        $(".logo").css("background-image","url(../images/logo-black.svg)");
+        $(".logo").css("background-image", "url('/images/logo-black.svg')");
+
     else
         $("nav.navbar.navbar-expand-lg.fixed-top.p-0").removeClass("navbar-gb"),
         $("a.nav-link.hover").css("color","white"),
@@ -35,7 +36,7 @@ $(document).ready(function(){
         $(".line1").css("background-color","white"),
         $(".line2").css("background-color","white"),
         $(".line3").css("background-color","white"),
-        $(".logo").css("background-image","url(../images/logo-white.svg)");
+        $(".logo").css("background-image", "url('/images/logo-white.svg')");
     });
 
 
